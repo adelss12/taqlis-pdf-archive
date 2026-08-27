@@ -1,29 +1,29 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ar" dir="rtl">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>Compress PDF Online Free — Parchment</title>
-  <meta name="description" content="Compress PDF files to reduce file size for free. No upload required — your files stay on your device. 100% private.">
-  <meta property="og:title" content="Compress PDF Online Free — Parchment">
-  <meta property="og:description" content="Reduce PDF file size without uploading your files. 100% private — runs in your browser.">
+  <title>تقليص PDF — ضغط ملفات PDF مجانًا</title>
+  <meta name="description" content="أداة عربية مجانية لتقليص حجم ملفات PDF مباشرة داخل المتصفح دون رفع الملفات إلى أي خادم.">
+  <meta property="og:title" content="تقليص PDF">
+  <meta property="og:description" content="قلّص حجم ملفات PDF بخصوصية تامة داخل متصفحك.">
   <meta property="og:type" content="website">
-  <link rel="canonical" href="https://parchpdf.com/compress.html">
+  <link rel="canonical" href="https://adelss12.github.io/taqlis-pdf/">
   <link rel="icon" type="image/svg+xml" href="favicon.svg">
   <link rel="stylesheet" href="css/style.css">
-  <meta property="og:url" content="https://parchpdf.com/compress.html">
-  <meta property="og:image" content="https://parchpdf.com/og-image.png">
+  <meta property="og:url" content="https://adelss12.github.io/taqlis-pdf/">
+  <meta property="og:image" content="https://adelss12.github.io/taqlis-pdf/og-image.png">
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Compress PDF Online Free — Parchment">
-  <meta name="twitter:description" content="Compress PDF files to reduce file size for free. No upload required — your files stay on your device. 100% private.">
-  <meta name="twitter:image" content="https://parchpdf.com/og-image.png">
+  <meta name="twitter:title" content="تقليص PDF">
+  <meta name="twitter:description" content="أداة عربية مجانية لتقليص حجم ملفات PDF داخل المتصفح.">
+  <meta name="twitter:image" content="https://adelss12.github.io/taqlis-pdf/og-image.png">
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "WebApplication",
-    "name": "Compress PDF - Parchment",
-    "description": "Compress PDF files to reduce file size for free. No upload required — your files stay on your device. 100% private.",
-    "url": "https://parchpdf.com/compress.html",
+    "name": "تقليص PDF",
+    "description": "أداة عربية مجانية لتقليص حجم ملفات PDF داخل المتصفح دون رفع الملفات.",
+    "url": "https://adelss12.github.io/taqlis-pdf/",
     "applicationCategory": "BrowserApplication",
     "operatingSystem": "All",
     "browserRequirements": "Requires JavaScript",
@@ -34,25 +34,28 @@
     },
     "creator": {
       "@type": "Organization",
-      "name": "Parchment",
-      "url": "https://parchpdf.com"
+      "name": "تقليص PDF",
+      "url": "https://adelss12.github.io/taqlis-pdf/"
     }
   }
   </script>
+  <style>
+    body{font-family:Tahoma,Arial,sans-serif}.taqlis-nav{display:flex;justify-content:space-between;align-items:center;padding:1rem 1.5rem;background:#fff;border-bottom:1px solid #eee}.taqlis-nav a{text-decoration:none;color:var(--text);font-size:1.15rem}.taqlis-nav strong{color:var(--accent)}.taqlis-nav span{color:var(--text-muted);font-size:.85rem}.tool-header h1,.options h3{font-family:Tahoma,Arial,sans-serif}.option-row select{text-align:right}.file-item{text-align:right}.taqlis-info{max-width:800px;margin:0 auto 2rem;padding:0 1.5rem}.taqlis-info article{background:#fff;border:1px solid var(--border-light);border-radius:var(--radius);padding:1.25rem;line-height:1.9;color:var(--text-muted)}.taqlis-info h2{color:var(--text);font-size:1.15rem;margin-bottom:.5rem}.taqlis-footer{text-align:center;padding:1.25rem;border-top:1px solid var(--border-light);color:var(--text-muted);font-size:.82rem}@media(max-width:600px){.taqlis-nav span{display:none}}
+  </style>
 </head>
 <body>
-  <div style="display:none">Impact-Site-Verification: 0161bd52-e095-4b1c-aeb4-53b1caf7a9f6</div>
+  <header class="taqlis-nav"><a href="index.html">📄 <strong>تقليص PDF</strong></a><span>ضغط آمن داخل جهازك</span></header>
   <div class="tool-header">
-    <h1>📦 Compress PDF</h1>
-    <p>Reduce PDF file size — completely free, completely private</p>
-    <div class="privacy-badge">🔒 Your files never leave your device</div>
+    <h1>📦 تقليص PDF</h1>
+    <p>قلّص حجم ملف PDF مجانًا وبخصوصية تامة</p>
+    <div class="privacy-badge">🔒 ملفاتك لا تغادر جهازك</div>
   </div>
 
   <div class="tool-container">
     <div class="drop-zone" id="dropZone">
       <input type="file" accept=".pdf,application/pdf">
       <div class="icon">📁</div>
-      <p>Drag &amp; drop a PDF file here, or <span class="browse">browse files</span></p>
+      <p>اسحب ملف PDF وأفلته هنا، أو <span class="browse">اختر ملفًا</span></p>
     </div>
 
     <div id="pdfInfo" style="display:none">
@@ -61,23 +64,23 @@
       </div>
 
       <div class="options">
-        <h3>Compression Level</h3>
+        <h3>مستوى التقليص</h3>
         <div class="option-row">
-          <label for="compLevel">Mode:</label>
+          <label for="compLevel">الوضع:</label>
           <select id="compLevel">
-            <option value="light">Light — Re-optimize structure (lossless)</option>
-            <option value="medium" selected>Medium — Downsample images to 150 DPI</option>
-            <option value="heavy">Heavy — Downsample images to 96 DPI</option>
+            <option value="light" selected>خفيف — تحسين بنية الملف دون فقدان الجودة</option>
+            <option value="medium">متوسط — ضغط الصور بدقة 150 DPI</option>
+            <option value="heavy">قوي — ضغط الصور بدقة 96 DPI</option>
           </select>
         </div>
         <div class="option-row" style="font-size:.85rem;color:var(--text-muted)">
-          Light mode re-serializes the PDF to remove unused objects (text and links are preserved). Medium and heavy modes re-render pages as compressed images for maximum size reduction — <strong>text selection, links, and form fields will not be preserved</strong>.
+          الوضع الخفيف يحافظ على النصوص والروابط وجودتها. الوضعان المتوسط والقوي يحولان الصفحات إلى صور مضغوطة لتقليل أكبر — <strong>لن تبقى النصوص والروابط وحقول النماذج قابلة للتحديد أو الاستخدام</strong>.
         </div>
       </div>
 
       <div class="action-bar">
-        <button class="btn btn-primary" id="compressBtn">Compress PDF</button>
-        <button class="btn btn-secondary" id="resetBtn">Choose Different File</button>
+        <button class="btn btn-primary" id="compressBtn">تقليص الملف</button>
+        <button class="btn btn-secondary" id="resetBtn">اختيار ملف آخر</button>
       </div>
 
       <div id="resultPanel" style="display:none">
@@ -85,7 +88,7 @@
           <div class="file-item" id="resultInfo"></div>
         </div>
         <div class="action-bar">
-          <button class="btn btn-primary" id="downloadBtn">Download Compressed PDF</button>
+          <button class="btn btn-primary" id="downloadBtn">تنزيل الملف بعد التقليص</button>
         </div>
       </div>
     </div>
@@ -94,11 +97,13 @@
     <div class="status-msg" id="status"></div>
   </div>
 
+  <section class="taqlis-info"><article><h2>كيف يعمل تقليص PDF؟</h2><p>اختر ملف PDF ثم حدد مستوى التقليص المناسب. تتم المعالجة بالكامل داخل متصفحك ولا يُرفع الملف إلى الإنترنت.</p><p><strong>نصيحة:</strong> ابدأ بالوضع الخفيف للمحافظة على النصوص والروابط. استخدم المتوسط أو القوي للملفات المصورة عندما تحتاج حجمًا أصغر.</p></article></section>
+  <footer class="taqlis-footer">تقليص PDF — أداة مجانية ومفتوحة المصدر، مبنية على مشروع Parchment المرخّص بترخيص MIT.</footer>
   <script src="https://unpkg.com/pdf-lib@1.17.1/dist/pdf-lib.min.js" integrity="sha384-weMABwrltA6jWR8DDe9Jp5blk+tZQh7ugpCsF3JwSA53WZM9/14PjS5LAJNHNjAI" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js" integrity="sha384-/1qUCSGwTur9vjf/z9lmu/eCUYbpOTgSjmpbMQZ1/CtX2v/WcAIKqRv+U1DUCG6e" crossorigin="anonymous"></script>
   <script src="js/common.js"></script>
   <script>
-    renderNav('compress'); renderFooter();
+
 
     pdfjsLib.GlobalWorkerOptions.workerSrc = 'https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.worker.min.js';
 
@@ -128,9 +133,9 @@
 
     async function loadPDF(file) {
       if (file.type !== 'application/pdf' && !file.name.toLowerCase().endsWith('.pdf')) {
-        setStatus(status, 'Please select a PDF file', 'error'); return;
+        setStatus(status, 'يرجى اختيار ملف PDF صحيح', 'error'); return;
       }
-      setStatus(status, 'Loading PDF…');
+      setStatus(status, 'جارٍ تحميل الملف…');
       try {
         pdfData = new Uint8Array(await file.arrayBuffer());
         originalName = file.name;
@@ -141,7 +146,7 @@
 
         fileInfo.innerHTML = `<div class="file-info">
           <div class="file-name">${file.name}</div>
-          <div class="file-meta">${formatSize(file.size)} · ${pageCount} page${pageCount !== 1 ? 's' : ''}</div>
+          <div class="file-meta">${formatSize(file.size)} · ${pageCount} صفحة</div>
         </div>`;
 
         dropZone.style.display = 'none';
@@ -150,7 +155,7 @@
         resultBlob = null;
         setStatus(status, '');
       } catch (err) {
-        setStatus(status, "This file doesn't appear to be a valid PDF", 'error');
+        setStatus(status, 'هذا الملف لا يبدو ملف PDF صالحًا', 'error');
       }
     }
 
@@ -159,7 +164,7 @@
       resultPanel.style.display = 'none';
       const level = document.getElementById('compLevel').value;
 
-      setStatus(status, 'Compressing…');
+      setStatus(status, 'جارٍ تقليص الملف…');
       setProgress(progress, 5);
 
       try {
@@ -209,8 +214,8 @@
         const reduction = ((1 - newSize / originalSize) * 100).toFixed(1);
         const icon = newSize < originalSize ? '✅' : '⚠️';
         const msg = newSize < originalSize
-          ? `Reduced by ${reduction}%`
-          : 'File is already well-optimized — compressed version is similar size';
+          ? `تم تقليل الحجم بنسبة ${reduction}%`
+          : 'الملف محسّن مسبقًا، ولم ينتج عن المعالجة حجم أصغر';
 
         resultInfo.innerHTML = `<div class="file-info">
           <div class="file-name">${icon} ${formatSize(originalSize)} → ${formatSize(newSize)}</div>
@@ -219,9 +224,10 @@
 
         resultPanel.style.display = '';
         setProgress(progress, 100);
-        setStatus(status, `Compression complete — ${formatSize(originalSize)} → ${formatSize(newSize)}`, 'success');
+        setStatus(status, newSize < originalSize ? `اكتمل التقليص — ${formatSize(originalSize)} ← ${formatSize(newSize)}` : 'لم يتم إنشاء ملف للتنزيل لأن الحجم الناتج ليس أصغر', newSize < originalSize ? 'success' : 'error');
+        downloadBtn.disabled = newSize >= originalSize;
       } catch (err) {
-        setStatus(status, 'Error: ' + err.message, 'error');
+        setStatus(status, 'حدث خطأ أثناء معالجة الملف: ' + err.message, 'error');
       }
       setProgress(progress, 0);
       compressBtn.disabled = false;
@@ -239,6 +245,5 @@
       onFiles: fs => loadPDF(fs[0])
     });
   </script>
-  <script data-goatcounter="https://parchpdf.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
 </body>
 </html>
