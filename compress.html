@@ -44,9 +44,9 @@
   </style>
 </head>
 <body>
-  <header class="taqlis-nav"><a href="index.html">📄 <strong>تقليص PDF</strong></a><span>ضغط آمن داخل جهازك</span></header>
+  <header class="taqlis-nav"><a href="index.html">📄 <strong>تقليص <span dir="ltr">PDF</span></strong></a><span>ضغط آمن داخل جهازك</span></header>
   <div class="tool-header">
-    <h1>📦 تقليص PDF</h1>
+    <h1>📦 تقليص <span dir="ltr">PDF</span></h1>
     <p>قلّص حجم ملف PDF مجانًا وبخصوصية تامة</p>
     <div class="privacy-badge">🔒 ملفاتك لا تغادر جهازك</div>
   </div>
@@ -146,7 +146,7 @@
 
         fileInfo.innerHTML = `<div class="file-info">
           <div class="file-name">${file.name}</div>
-          <div class="file-meta">${formatSize(file.size)} · ${pageCount} صفحة</div>
+          <div class="file-meta"><span dir="ltr">${formatSize(file.size)}</span> · ${pageCount} صفحة</div>
         </div>`;
 
         dropZone.style.display = 'none';
@@ -218,13 +218,13 @@
           : 'الملف محسّن مسبقًا، ولم ينتج عن المعالجة حجم أصغر';
 
         resultInfo.innerHTML = `<div class="file-info">
-          <div class="file-name">${icon} ${formatSize(originalSize)} → ${formatSize(newSize)}</div>
+          <div class="file-name">${icon} <span dir="ltr">${formatSize(originalSize)} → ${formatSize(newSize)}</span></div>
           <div class="file-meta">${msg}</div>
         </div>`;
 
         resultPanel.style.display = '';
         setProgress(progress, 100);
-        setStatus(status, newSize < originalSize ? `اكتمل التقليص — ${formatSize(originalSize)} ← ${formatSize(newSize)}` : 'لم يتم إنشاء ملف للتنزيل لأن الحجم الناتج ليس أصغر', newSize < originalSize ? 'success' : 'error');
+        setStatus(status, newSize < originalSize ? 'اكتمل تقليص الملف بنجاح' : 'لم يتم إنشاء ملف للتنزيل لأن الحجم الناتج ليس أصغر', newSize < originalSize ? 'success' : 'error');
         downloadBtn.disabled = newSize >= originalSize;
       } catch (err) {
         setStatus(status, 'حدث خطأ أثناء معالجة الملف: ' + err.message, 'error');
